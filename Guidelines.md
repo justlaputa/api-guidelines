@@ -856,21 +856,21 @@ The value of the _$filter_ option is a Boolean expression.
 #### 9.7.1. Filter operations
 Services that support _$filter_ SHOULD support the following minimal set of operations.
 
-Operator             | Description           | Example
--------------------- | --------------------- | -----------------------------------------------------
-Comparison Operators |                       |
-eq                   | Equal                 | city eq 'Redmond'
-ne                   | Not equal             | city ne 'London'
-gt                   | Greater than          | price gt 20
-ge                   | Greater than or equal | price ge 10
-lt                   | Less than             | price lt 20
-le                   | Less than or equal    | price le 100
-Logical Operators    |                       |
-and                  | Logical and           | price le 200 and price gt 3.5
-or                   | Logical or            | price le 3.5 or price gt 200
-not                  | Logical negation      | not price le 3.5
-Grouping Operators   |                       |
-( )                  | Precedence grouping   | (priority eq 1 or city eq 'Redmond') and price gt 100
+|Operator             | Description           | Example |
+|-------------------- | --------------------- | ----------------------------------------------------- |
+|Comparison Operators |                       | |
+|eq                   | Equal                 | city eq 'Redmond' |
+|ne                   | Not equal             | city ne 'London' |
+|gt                   | Greater than          | price gt 20 |
+|ge                   | Greater than or equal | price ge 10 |
+|lt                   | Less than             | price lt 20 |
+|le                   | Less than or equal    | price le 100 |
+|Logical Operators    |                       | |
+|and                  | Logical and           | price le 200 and price gt 3.5 |
+|or                   | Logical or            | price le 3.5 or price gt 200 |
+|not                  | Logical negation      | not price le 3.5 |
+|Grouping Operators   |                       | |
+|( )                  | Precedence grouping   | (priority eq 1 or city eq 'Redmond') and price gt 100 |
 
 #### 9.7.2. Operator examples
 The following examples illustrate the use and semantics of each of the logical operators.
